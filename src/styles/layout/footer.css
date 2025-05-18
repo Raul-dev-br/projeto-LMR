@@ -1,0 +1,19 @@
+.footer-text{
+  font-size: 2.2rem;
+  margin: 5.0rem 0 7rem 0;
+}
+
+.footer-container{
+  text-align: center;
+}
+
+.botao-footer{
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  width: 17rem;
+  gap: 5px;
+  margin-bottom: 6.5rem;
+}

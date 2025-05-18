@@ -1,0 +1,119 @@
+@import url('layout/header.css');
+@import url('layout/main-page.css');
+@import url('layout/about.css');
+@import url('layout/services.css');
+@import url('layout/footer.css');
+
+
+@font-face {
+  font-family: "Roboto";
+  src: url('../assets/fonts/Roboto-Italic-VariableFont_wdth\,wght.ttf');
+}
+
+:root{
+  --color-header-background: #ffffff13;
+  --color-header-scroll: #1b0d06;
+  --color-header-logo-scroll:#311508;
+  --color-logo: #ec4226;
+  --color-button: #f13e1d;
+  --color-styled-word: #f03818;
+
+  --color-one:#f4ece9;
+  --color-two:#f03818;
+  --color-three:#eb5c35;
+  --color-four:#ffffff;
+  --color-five:#68554f;
+  --color-six:#b7bbbe;
+  --color-seven:#1a1e23;
+  --color-eight:#1f222a;
+  --color-nine: #f13e1d;
+
+  --fonte:'Roboto';
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+#about{
+  scroll-margin-top: 15.0rem; /* ajuste o valor para a altura do seu cabeçalho fixo */
+}
+
+#services{
+  scroll-margin-top: 13.0rem;
+}
+
+body{
+  font-family:  system-ui, sans-serif;;
+}
+
+h1,h2{
+  color: var(--color-four);
+}
+
+h2{
+  font-size: 5.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 3.5rem 0;
+}
+
+h3{
+  font-size: 1.6rem;
+  color: var(--color-two);
+  padding: 3rem 0;
+}
+
+p{
+  color: var(--color-six);
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+a{
+  text-decoration: none;
+}
+
+.first-container{
+  background: linear-gradient(#1b0d06 0%,#311508 55%,#752903, #1a1e23);
+}
+
+.second-container{
+  background-color: var(--color-seven);
+  height: 150vh;
+}
+
+.third-container{
+  background-color: var(--color-eight);
+  height: 110vh;
+}
+
+.fourth-container{
+  background-color: var(--color-seven);
+  height: 110vh;
+}
+
+.fifth-container{
+  background-color: var(--color-seven);
+  height: 80vh;
+}
+
+.container{
+  max-width: 90vw;
+  margin: 0px auto;
+  padding: 20px 20px 0px 20px;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.styled-word{
+  color: var(--color-styled-word);
+}
+
+
+
+

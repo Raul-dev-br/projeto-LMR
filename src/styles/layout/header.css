@@ -1,0 +1,88 @@
+
+.header{
+  background-color: var(--color-header-background); 
+  backdrop-filter: blur(40px);
+  border-radius: 3.0rem;
+  padding: 1.5rem 3.0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-scroll{
+  transition: .6s ease-in-out;
+  background-color: aliceblue;
+  color: var(--color-header-scroll);  
+  position: fixed;
+  top: 20px;
+  width: 86vw;
+  z-index: 100;
+}
+
+.header-scroll .logo{
+  color: var(--color-header-logo-scroll);
+}
+
+.header-scroll .links-nav a{
+  color: var(--color-header-scroll);
+}
+
+.header-div{
+  display: flex;
+  align-items: center;
+}
+
+.image-logo{
+  color: var(--color-logo);
+  font-size: 2.2rem;
+}
+
+.logo-div{
+  margin-right: 7.0rem;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.logo{
+  font-size: 3.0rem;
+  font-family: var(--fonte), sans-serif;
+  font-weight: 800;
+  color: var(--color-one);
+}
+
+.links-nav{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 2.5rem;
+  font-size: 2.0rem;
+  color: var(--color-one);
+  cursor: pointer;
+}
+
+.links-nav a{
+  color: var(--color-one);
+}
+
+.links-nav a:hover{
+  transition: .3s;
+  color: var(--color-logo);
+}
+
+.button-main-page{
+  background-color: var(--color-button);
+  color: var(--color-one);
+  padding: 1.0rem 2.0rem;
+  width: 8.0rem;
+  border: none;
+  border-radius: 4.0rem;
+  text-align: center;
+  font-size: 2.0rem;
+}
+
+.button-main-page:hover{
+  transition: .4s ease-in-out;
+  transform: scale(1.1);
+}
+
