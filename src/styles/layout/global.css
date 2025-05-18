@@ -1,9 +1,3 @@
-@import url('layout/header.css');
-@import url('layout/main-page.css');
-@import url('layout/about.css');
-@import url('layout/services.css');
-@import url('layout/footer.css');
-
 
 @font-face {
   font-family: "Roboto";
@@ -95,8 +89,8 @@ a{
 }
 
 .fifth-container{
-  background-color: var(--color-seven);
-  height: 80vh;
+  background-color: var(--color-eight);
+  height: 500px;
 }
 
 .container{

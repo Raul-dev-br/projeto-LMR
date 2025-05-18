@@ -1,0 +1,102 @@
+.subscriptions-title{
+  margin: 0 0 4rem 0;
+  padding-top: 0;
+}
+
+.container-prices{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3.0rem;
+  width: 100%;
+}
+
+.card-price{
+  padding: 3.0rem;
+  border-radius: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  justify-content: space-between;
+}
+
+.card-price-title{
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: var(--color-four);
+}
+
+.card-price-div{
+  display: flex;
+  align-items: first baseline;
+  gap: 4px;
+  color: var(--color-six);
+}
+
+.card-price-monthly-price{
+  font-size: 3.0rem;
+  font-weight: 800;
+  color: var(--color-four);
+}
+
+.card-price-div p{
+  font-size: 1.4rem;
+}
+
+.card-price-description{
+  font-size: 1.6rem;
+  margin: 1.0rem 0 2.0rem 0;
+}
+
+.card-price-bonus{
+  font-size: 1.7rem;
+  color: var(--color-six);
+  text-transform: uppercase;
+}
+
+.card-price-list{
+  list-style-type: none;
+  font-size: 1.8rem;
+  color: var(--color-six);
+  margin: 2rem 0;
+}
+
+.card-price-list .item{
+  position: relative;
+  padding: 6px 0 6px 30px; /* espaço para o ícone */
+}
+
+.card-price-list .item::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('../../assets/images/icons/icone-check.svg'); /* coloque aqui o caminho da sua imagem */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.button-price{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  background-color: #393d43;
+  padding: 1.3rem 0;
+  border-radius: 10px;
+  color: var(--color-four);
+}
+
+.button-price:hover{
+  transition: .3s ease-in-out;
+  background-color: var(--color-nine);
+}
+
+/* .button-price:hover ~ .card-price{
+  background-image: linear-gradient(#1f222a, #f13e1d);
+} */
