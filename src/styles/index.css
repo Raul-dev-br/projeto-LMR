@@ -1,8 +1,427 @@
-@import url('vendor/reset.css');
-@import url('layout/global.css');
-@import url('layout/header.css');
-@import url('layout/main-page.css');
-@import url('layout/about.css');
-@import url('layout/services.css');
-@import url('layout/subscriptions.css');
-@import url('layout/footer.css');
+
+@font-face {
+  font-family: "Roboto";
+  src: url('../assets/fonts/Roboto-Italic-VariableFont_wdth\,wght.ttf');
+}
+
+:root{
+  --color-header-background: #ffffff13;
+  --color-header-scroll: #1b0d06;
+  --color-header-logo-scroll:#311508;
+  --color-logo: #ec4226;
+  --color-button: #f13e1d;
+  --color-styled-word: #f03818;
+
+  --color-one:#f4ece9;
+  --color-two:#f03818;
+  --color-three:#eb5c35;
+  --color-four:#ffffff;
+  --color-five:#68554f;
+  --color-six:#b7bbbe;
+  --color-seven:#1a1e23;
+  --color-eight:#1f222a;
+  --color-nine: #f13e1d;
+
+  --fonte:'Roboto';
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+#about{
+  scroll-margin-top: 15.0rem;
+}
+
+#services{
+  scroll-margin-top: 13.0rem;
+}
+
+body{
+  font-family:  system-ui, sans-serif;;
+}
+
+h1,h2{
+  color: var(--color-four);
+}
+
+h2{
+  font-size: 5.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 3.5rem 0;
+}
+
+h3{
+  font-size: 1.8rem;
+  color: var(--color-two);
+  padding: 3rem 0;
+}
+
+p{
+  color: var(--color-six);
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+a{
+  text-decoration: none;
+}
+
+.first-container{
+  background: linear-gradient(#1b0d06 0%,#311508 55%,#752903, #1a1e23);
+  height: 100vh;
+}
+
+.second-container{
+  background-color: var(--color-seven);
+  height: 150vh;
+}
+
+.third-container{
+  background-color: var(--color-eight);
+  height: 110vh;
+}
+
+.fourth-container{
+  background-color: var(--color-seven);
+  height: 110vh;
+}
+
+.fifth-container{
+  background-color: var(--color-eight);
+  height: 75vh;
+}
+
+.container{
+  max-width: 90vw;
+  margin: 0px auto;
+  padding: 20px 20px 0px 20px;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0px 0px;
+}
+
+.styled-word{
+  color: var(--color-styled-word);
+}
+
+@media screen{
+  .header {
+  background-color: var(--color-header-background); 
+  backdrop-filter: blur(40px);
+  border-radius: 3.0rem;
+  padding: 1.5rem 3.0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 20px;
+  width: 86vw; 
+  transition: all 0.3s ease; 
+  z-index: 100;
+  }
+
+  .header-scroll{
+    background-color: aliceblue;
+    color: var(--color-header-scroll);  
+  }
+
+  .header-scroll .logo{
+    color: var(--color-header-logo-scroll);
+  }
+
+  .header-scroll .links-nav a{
+    color: var(--color-header-scroll);
+  }
+
+  .header-div{
+    display: flex;
+    align-items: center;
+  }
+
+  .image-logo{
+    color: var(--color-logo);
+    font-size: 2.2rem;
+  }
+
+  .logo-div{
+    margin-right: 7.0rem;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .logo{
+    font-size: 3.0rem;
+    font-family: var(--fonte), sans-serif;
+    font-weight: 800;
+    color: var(--color-one);
+  }
+
+  .links-nav{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2.5rem;
+    font-size: 2.0rem;
+    color: var(--color-one);
+    cursor: pointer;
+  }
+
+  .links-nav a{
+    color: var(--color-one);
+  }
+
+  .links-nav a:hover{
+    transition: .3s;
+    color: var(--color-logo);
+  }
+
+  .button-main-page{
+    background-color: var(--color-button);
+    color: var(--color-one);
+    padding: 1.0rem 2.0rem;
+    width: 8.0rem;
+    border: none;
+    border-radius: 4.0rem;
+    text-align: center;
+    font-size: 2.0rem;
+  }
+
+  .button-main-page:hover{
+    transition: .2s ease-out;
+    transform: scale(1.1);
+  }
+
+  .about-text{
+    width: 75.0rem;
+    margin-bottom: 6.0rem;
+  }
+
+  .about-numbers{
+    display: flex;
+    gap: 6.0rem;
+    margin: 5rem 0;
+  }
+
+  .div-numbers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .numbers{
+    font-size: 6rem;
+    color: white;
+    font-weight: 800;
+  }
+
+  .about-image-gym{
+    width: 100%;
+    height: 55.0rem;
+    border-radius: 30px;
+    object-fit: cover;
+  }
+
+  .main-page{
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-title{
+    font-size: 7.5rem;
+    font-weight: 900;
+    text-transform: capitalize;
+  }
+
+  .main-subtitle{
+    width: 570px;
+    margin: 40px 0px;
+  }
+
+  .button-join{
+    display: flex;
+    align-items: center;
+    padding: 13px 40px;
+    width: 11rem;
+  }
+
+  .image-bodybuilder{
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .services-text{
+    margin-bottom: 7.0rem;
+  }
+
+  .div-services{
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  .services-img{
+    width: 100%;
+    max-height: 25rem;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .figure-services{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .figure-services:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%; /* altura do esfumaçado */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
+    border-radius: 0px 0px 30px 30px;
+  }
+
+  .figcaption-services{
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: white;
+    font-size: 1.6rem;
+    z-index: 1;
+  }
+
+  .subscriptions-title{
+    margin: 0 0 4rem 0;
+    padding-top: 0;
+  }
+
+  .container-prices{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3.0rem;
+    width: 100%;
+  }
+
+  .card-price{
+    padding: 3.0rem;
+    border-radius: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    justify-content: space-between;
+    background-color: var(--color-eight);
+  }
+
+  .card-price-title{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: var(--color-four);
+  }
+
+  .card-price-div{
+    display: flex;
+    align-items: first baseline;
+    gap: 4px;
+    color: var(--color-six);
+  }
+
+  .card-price-monthly-price{
+    font-size: 3.0rem;
+    font-weight: 800;
+    color: var(--color-four);
+  }
+
+  .card-price-div p{
+    font-size: 1.4rem;
+  }
+
+  .card-price-description{
+    font-size: 1.6rem;
+    margin: 1.0rem 0 2.0rem 0;
+  }
+
+  .card-price-bonus{
+    font-size: 1.7rem;
+    color: var(--color-six);
+    text-transform: uppercase;
+  }
+
+  .card-price-list{
+    list-style-type: none;
+    font-size: 1.8rem;
+    color: var(--color-six);
+    margin: 2rem 0;
+  }
+
+  .card-price-list .item{
+    position: relative;
+    padding: 6px 0 6px 30px;
+  }
+
+  .card-price-list .item::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/images/icons/icone-check.svg'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .button-price{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    background-color: #393d43;
+    padding: 1.3rem 0;
+    border-radius: 10px;
+    color: var(--color-four);
+  }
+
+  .button-price:hover{
+    transition: .3s ease-in-out;
+    background-color: var(--color-nine);
+  }
+
+  .footer-text{
+    font-size: 2.4rem;
+    margin: 5.0rem 0 7rem 0;
+  }
+
+  .footer-container{
+    text-align: center;
+  }
+
+  .botao-footer{
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    width: 17rem;
+    gap: 5px;
+  }
+}
+
+
+
+
+

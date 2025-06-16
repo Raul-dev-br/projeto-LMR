@@ -7,7 +7,7 @@ botoes.forEach((botao, index) => {
   });
 
   botao.addEventListener('mouseleave', () => {
-    cards[index].style.backgroundImage = 'none'; // ou uma cor padrão
-    cards[index].style.backgroundColor = '#1f222a'; // por exemplo
+    cards[index].style.backgroundImage = 'none'; 
+    cards[index].style.backgroundColor = '#1f222a'; 
   });
 });
